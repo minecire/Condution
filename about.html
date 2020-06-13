@@ -1,77 +1,5 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-
-         <!--LOADMEFIRST: Themes-->
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default.css" />
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default-light.css" />
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default-dark.css" />
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-exr0n-aggresivedark.css" />
-
-        <!--Fonts and Icons-->
-        <script src="https://kit.fontawesome.com/c54dcdbe34.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-         <!--Other People Codes-->
-        <script>window.$ = window.jQuery = require('jquery');</script>
-        <script type='text/javascript' src="js/jquery-ui.min.js"></script>
-
-        <style>
-            body {
-                font-family: sans-serif;
-                background-image: url("./static/about-background.png");
-                background-repeat: no-repeat;
-                background-size: 550px 175px;
-            }
-            pre {
-                overflow: auto;
-                width: 540px;
-                word-break: normal !important;
-                word-wrap: normal !important;
-                white-space: pre !important;
-            }
-
-            *::-webkit-scrollbar { 
-                display: none;  /* Scrollbar Fix, Chrome? and Apple Runtime */
-            }
-
-            #center {
-                position: absolute;
-                top: 50%;
-                height: 100px;
-                margin-top: -60px;
-            }
-
-            #floathead {
-                -webkit-app-region: drag;
-                background-color: transparent;
-                height: 34px;
-                z-index: 10000;
-            }
-        </style>
-        <script>
-            const remote = require('electron').remote;
-            $(window).on("blur", ()=>remote.getCurrentWindow().close());
-        </script>
-    </head>
-
-    <body style="background-color: #f4f4f4">
-        <div id="floathead"> </div>
-        <div id="center">
-            <h1 style="margin:0; font-size: 24px; padding-bottom: 6px"><t style="font-weight: 300;padding-right: 8px; border-right:1px solid #16222c;">#!/Shabang</t> <b style="color:#434d5f;">Condution</b></h1>
-            <t style="font-size: 15px; font-weight: 600">Tasks? Done. That was easy.</t>
-            <br />
-            <br />
-            <br />
-            <div style="font-size: 12px;">
-                <div style="margin-top: 3px; font-size: 10px"><b>Lead Contributors</b> Albert Huang, Houjun Liu, Huxley Marvit, Micah Robinson, Zachary Sayyah, Dongling Yang</div>
-                <div style="margin-top: 5px; font-weight: 300">&#169;2019-2020 Shabang Systems, LLC and the Condution Project Contributors</div>
-                <!--<div style="margin-top: 5px; font-size:10px" >Scroll Down for Licensing Information</div>-->
-            </div>
-            <br />
-            <br />
-            <h3>Project License</h3>
+<html> <head> <meta charset="UTF-8"> <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default.css" /> <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default-light.css" /> <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default-dark.css" /> <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-exr0n-aggresivedark.css" /> <script src="https://kit.fontawesome.com/c54dcdbe34.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <script>window.$ = window.jQuery = require('jquery');</script> <script type='text/javascript' src="js/jquery-ui.min.js"></script> <style> body { font-family: sans-serif; background-image: url("./static/about-background.png"); background-repeat: no-repeat; background-size: 550px 175px; } pre { overflow: auto; width: 540px; word-break: normal !important; word-wrap: normal !important; white-space: pre !important; } *::-webkit-scrollbar { display: none;  } #center { position: absolute; top: 50%; height: 100px; margin-top: -60px; } #floathead { -webkit-app-region: drag; background-color: transparent; height: 34px; z-index: 10000; } </style> <script> const remote = require('electron').remote; $(window).on("blur", ()=>remote.getCurrentWindow().close()); </script> </head> <body style="background-color: #f4f4f4"> <div id="floathead"> </div> <div id="center"> <h1 style="margin:0; font-size: 24px; padding-bottom: 6px"><t style="font-weight: 300;padding-right: 8px; border-right:1px solid #16222c;">#!/Shabang</t> <b style="color:#434d5f;">Condution</b></h1> <t style="font-size: 15px; font-weight: 600">Tasks? Done. That was easy.</t> <br /> <br /> <br /> <div style="font-size: 12px;"> <div style="margin-top: 3px; font-size: 10px"><b>Lead Contributors</b> Albert Huang, Houjun Liu, Huxley Marvit, Micah Robinson, Zachary Sayyah, Dongling Yang</div> <div style="margin-top: 5px; font-weight: 300">&#169;2019-2020 Shabang Systems, LLC and the Condution Project Contributors</div> </div> <br /> <br /> <h3>Project License</h3>
 <pre>
 Copyright (C)2020  Shabang Systems, LLC
 
@@ -605,7 +533,4 @@ a
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-</pre>
-        </div>
-    </body>
-</html>
+</pre> </div> </body> </html>
