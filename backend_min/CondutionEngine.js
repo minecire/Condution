@@ -1,0 +1,1 @@
+let dbFuncs=require("./src/ObjectManager"),pspObj=require("./src/PerspectiveManager"),dbRefObj=require("./src/DBManager");module.exports={start:dbRefObj.__init__,db:dbFuncs,perspective:pspObj};

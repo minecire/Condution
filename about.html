@@ -1,79 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-
-         <!--LOADMEFIRST: Themes-->
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default.css" />
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default-light.css" />
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-default-dark.css" />
-        <link rel="stylesheet" type="text/css" href="css/themes/condutiontheme-exr0n-aggresivedark.css" />
-
-        <!--Fonts and Icons-->
-        <script src="https://kit.fontawesome.com/c54dcdbe34.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-         <!--Other People Codes-->
-        <script>window.$ = window.jQuery = require('jquery');</script>
-        <script type='text/javascript' src="js/jquery-ui.min.js"></script>
-
-        <style>
-            body {
-                font-family: sans-serif;
-                background-image: url("./static/about-background.png");
-                background-repeat: no-repeat;
-                background-size: 550px 175px;
-            }
-            pre {
-                overflow: auto;
-                width: 540px;
-                word-break: normal !important;
-                word-wrap: normal !important;
-                white-space: pre !important;
-            }
-
-            *::-webkit-scrollbar { 
-                display: none;  /* Scrollbar Fix, Chrome? and Apple Runtime */
-            }
-
-            #center {
-                position: absolute;
-                top: 50%;
-                height: 100px;
-                margin-top: -60px;
-            }
-
-            #floathead {
-                -webkit-app-region: drag;
-                background-color: transparent;
-                height: 34px;
-                z-index: 10000;
-            }
-        </style>
-        <script>
-            const remote = require('electron').remote;
-            $(window).on("blur", ()=>remote.getCurrentWindow().close());
-        </script>
-    </head>
-
-    <body style="background-color: #f4f4f4">
-        <div id="floathead"> </div>
-        <div id="center">
-            <h1 style="margin:0; font-size: 24px; padding-bottom: 6px"><t style="font-weight: 300;padding-right: 3px;">#!/Shabang</t> <b style="color:#434d5f;">Condution</b></h1>
-            <t style="font-size: 15px; font-weight: 600; padding-right: 10px;">Tasks? Done. That was easy.</t>
-            <t style="font-size: 12px; font-weight: 300"><b>Bontehu!</b> beta-v0.1.3_build2</t>
-            <br />
-            <br />
-            <br />
-            <div style="font-size: 12px;">
-                <div style="margin-top: 3px; font-size: 10px"><b>Lead Contributors</b> Albert Huang, Houjun Liu, Huxley Marvit, Micah Robinson, Zachary Sayyah, Dongling Yang</div>
-                <div style="margin-top: 5px; font-weight: 300">&#169;2019-2020 Shabang Systems, LLC and the Condution Project Contributors</div>
-                <!--<div style="margin-top: 5px; font-size:10px" >Scroll Down for Licensing Information</div>-->
-            </div>
-            <br />
-            <br />
-            <h3>Project License</h3>
-<pre>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="stylesheet"type="text/css"href="css/themes/condutiontheme-default.css"><link rel="stylesheet"type="text/css"href="css/themes/condutiontheme-default-light.css"><link rel="stylesheet"type="text/css"href="css/themes/condutiontheme-default-dark.css"><link rel="stylesheet"type="text/css"href="css/themes/condutiontheme-exr0n-aggresivedark.css"><script src="https://kit.fontawesome.com/c54dcdbe34.js"crossorigin="anonymous"></script><link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"><script>window.$=window.jQuery=require("jquery")</script><script type="text/javascript"src="js/jquery-ui.min.js"></script><style>body{font-family:sans-serif;background-image:url(static/about-background.png);background-repeat:no-repeat;background-size:550px 175px}pre{overflow:auto;width:540px;word-break:normal!important;word-wrap:normal!important;white-space:pre!important}::-webkit-scrollbar{display:none}#center{position:absolute;top:50%;height:100px;margin-top:-60px}#floathead{-webkit-app-region:drag;background-color:transparent;height:34px;z-index:10000}</style><script>const remote = require('electron').remote;
+            $(window).on("blur", ()=>remote.getCurrentWindow().close());</script></head><body style="background-color:#f4f4f4"><div id="floathead"></div><div id="center"><h1 style="margin:0;font-size:24px;padding-bottom:6px"><t style="font-weight:300;padding-right:3px">#!/Shabang</t><b style="color:#434d5f">Condution</b></h1><t style="font-size:15px;font-weight:600;padding-right:10px">Tasks? Done. That was easy.</t><t style="font-size:12px;font-weight:300"><b>Bontehu!</b> beta-v0.1.3_build2</t><br><br><br><div style="font-size:12px"><div style="margin-top:3px;font-size:10px"><b>Lead Contributors</b> Albert Huang, Houjun Liu, Huxley Marvit, Micah Robinson, Zachary Sayyah, Dongling Yang</div><div style="margin-top:5px;font-weight:300">&#169;2019-2020 Shabang Systems, LLC and the Condution Project Contributors</div></div><br><br><h3>Project License</h3><pre>
 Copyright (C)2020  Shabang Systems, LLC
 
 This program is free software: you can redistribute it and/or modify
@@ -88,9 +14,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see https://www.gnu.org/licenses/.
-</pre>
-            <h3>jQuery</h3>
-<pre>
+</pre><h3>jQuery</h3><pre>
 Copyright OpenJS Foundation and other contributors, https://openjsf.org/
 
 Permission is hereby granted, free of charge, to any person obtaining
@@ -111,14 +35,10 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</pre>
-            <h3>Google Firebase</h3>
-<pre>
+</pre><h3>Google Firebase</h3><pre>
 license: Commercial
 url: https://www.firebase.com/terms/terms-of-service.html
-</pre>
-            <h3>popper.JS</h3>
-<pre>
+</pre><h3>popper.JS</h3><pre>
 Copyright (c) 2019 Federico Zivolo
 
 Permission is hereby granted, free of charge, to any person obtaining
@@ -139,9 +59,7 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</pre>
-            <h3>moment-timezone</h3>
-<pre>
+</pre><h3>moment-timezone</h3><pre>
 Copyright (c) JS Foundation and other contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -160,9 +78,7 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
-</pre>
-            <h3>Bootstrap</h3>
-<pre>
+</pre><h3>Bootstrap</h3><pre>
 Copyright (c) 2011-2018 Twitter, Inc.
 Copyright (c) 2011-2018 The Bootstrap Authors
 
@@ -183,9 +99,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-</pre>
-        <h3>typeahead.js</h3>
-<pre>
+</pre><h3>typeahead.js</h3><pre>
 Copyright (c) 2013-2014 Twitter, Inc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -205,9 +119,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-</pre>
-        <h3>mousetrap</h3>
-<pre>
+</pre><h3>mousetrap</h3><pre>
 
                               Apache License
                         Version 2.0, January 2004
@@ -402,9 +314,7 @@ prospectively choose to deem waived or otherwise exclude such Section(s) of
 the License, but only in their entirety and only with respect to the Combined
 Software.
 a
-</pre>
-        <h3>Fuse.js</h3>
-<pre>
+</pre><h3>Fuse.js</h3><pre>
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -606,7 +516,4 @@ a
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-</pre>
-        </div>
-    </body>
-</html>
+</pre></div></body></html>
