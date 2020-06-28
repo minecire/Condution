@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Chapter 0: Fire! Base!
 const { ipcRenderer } = require('electron');
 
@@ -37,7 +39,7 @@ ipcRenderer.on("systheme-light", function (event, data) {
     /*$("#loading").hide().css("display", "flex").fadeIn();*/
     // Initialize Firebase Application
     // TODO TODO TODO !!!! Change this on deploy
-    const obj = require("./backend/secrets")
+    const obj = require("./backend/secrets");
     firebase.initializeApp(obj.dbkeys.debug);
 
     let isNASuccess = false;
@@ -84,7 +86,7 @@ ipcRenderer.on("systheme-light", function (event, data) {
         }).catch(function(error) {
             $(".auth-upf").addClass("wrong");
         });
-    }
+    };
 
     let nu = function() {
         firebase.auth().createUserWithEmailAndPassword($("#email").val(), $("#password").val()).catch(function(error) {
@@ -93,7 +95,7 @@ ipcRenderer.on("systheme-light", function (event, data) {
         $('#need-verify').fadeIn();
         $('#recover-password').fadeOut();
         isNASuccess = true;
-    }
+    };
 
     $("#password").keydown(function(e) {
         if (e.keyCode == 13) {

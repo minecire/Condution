@@ -1,4 +1,5 @@
-const { app, BrowserWindow, systemPreferences, nativeTheme, ipcMain, Menu } = require('electron')
+/*jshint esversion: 8 */
+const { app, BrowserWindow, systemPreferences, nativeTheme, ipcMain, Menu } = require('electron');
 const { autoUpdater } = require("electron-updater");
 autoUpdater.checkForUpdatesAndNotify();
 
@@ -17,7 +18,7 @@ function createWindow () {
         },
         'titleBarStyle': 'hiddenInset',
         'show': false,
-    })
+    });
 
     if(nativeTheme.shouldUseDarkColors) {
         win.setBackgroundColor("#161616");
@@ -26,28 +27,28 @@ function createWindow () {
     }
 
     win.on('page-title-updated', function(e) {
-        e.preventDefault()
+        e.preventDefault();
     });
 
     win.removeMenu();
     // and load the main of the app.
-    win.loadFile('app.html')
+    win.loadFile('app.html');
     
     nativeTheme.addListener("updated", function() {
         if(nativeTheme.shouldUseDarkColors) {
             win.setBackgroundColor("#161616");
-            win.webContents.send("systheme-dark", "hello")
+            win.webContents.send("systheme-dark", "hello");
         } else {
             win.setBackgroundColor("#f4f4f4");
-            win.webContents.send("systheme-light", "hello")
+            win.webContents.send("systheme-light", "hello");
         }
     });
     ipcMain.on('updatecheck', (event, arg) => {
         autoUpdater.checkForUpdatesAndNotify();
-    })
+    });
 
     win.once('ready-to-show', function() {
-        win.show()
+        win.show();
     });
 }
 
@@ -67,22 +68,22 @@ function createAbout () {
         'maximizable': false,
         //'frame': false,
         'show': false,
-    })
+    });
 
     win.on('page-title-updated', function(e) {
-        e.preventDefault()
+        e.preventDefault();
     });
 
     win.removeMenu();
     // and load the main of the app.
-    win.loadFile('about.html')
+    win.loadFile('about.html');
     
     win.once('ready-to-show', function() {
-        win.show()
+        win.show();
     });
 }
 
-const isMac = process.platform === 'darwin'
+const isMac = process.platform === 'darwin';
 
 const template = [
   // { role: 'appMenu' }
@@ -178,16 +179,16 @@ const template = [
       {
         label: 'Help and Documentation',
         click: async () => {
-          const { shell } = require('electron')
-          await shell.openExternal('https://condutiondocs.shabang.cf')
+          const { shell } = require('electron');
+          await shell.openExternal('https://condutiondocs.shabang.cf');
         }
       }
     ]
   }
-]
+];
 
-const menu = Menu.buildFromTemplate(template)
-Menu.setApplicationMenu(menu)
+const menu = Menu.buildFromTemplate(template);
+Menu.setApplicationMenu(menu);
 
 app.name = 'Condution';
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow);

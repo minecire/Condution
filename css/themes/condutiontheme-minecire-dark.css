@@ -1,0 +1,81 @@
+/* Colours */
+.condutiontheme-minecire-dark {
+    /* Background */
+    /* These two colors should lightly contrast 
+     * think: a hover over the background should
+     * be colored --background-feature */
+    --background: #000022;
+    --background-feature: #003366;
+    --background-feature-overlay: rgba(20, 38, 48, 0.7);
+
+    /* Content */
+    /* These are the mail colors. Make them mainly
+     * to be bold and clear. Also make them kind of related 
+     * to one main color */
+    --content-normal: #446688;
+    --content-normal-alt: #CCEEFF;
+    --content-normal-accent: #009922;
+
+    /* Decorative */
+    --decorative-light: #99BBDD;
+    --decorative-light-alt: #CCEEFF;
+    --decorative-light-accent: #FFFFCC;
+
+    /* Menu colors */
+    /* These colors should all in different
+     * degrees contrast the --menu-background
+     * think: a selected item over the background */
+    --menu-background: #002200;
+    --menu-semiaccent-background: #004422;
+    --menu-accent-background: #002266;
+    --menu-text: #FFFFFF;
+    --menu-accent: #BCC0C9;
+    --menu-label: #BCC0C9;
+    --menu-action: #9097a3;
+
+    /* Task colors */
+    --task: #E6F0FF;
+    --task-icon: #AACCFF;
+    --task-feature: #004444;
+    --task-feature-alt: #00FF88;
+    --task-textbox: #EEFFFF;
+    --task-textbox-background: #449977;
+    --task-clickbox-background: #449977;
+    --task-clickbox-accent-background: #002211;
+    --task-clickbox: #FFFFFF;
+    --task-checkbox: #468;
+    --task-checkbox-feature: #468;
+    --task-checkbox-ds: #f8974a;
+    --task-checkbox-ds-feature: #f5c09d;
+    --task-checkbox-ds-background: #f4eae4;
+    --task-checkbox-od: #c04f40;
+    --task-checkbox-od-feature: #ed938c;
+    --task-checkbox-od-background: #f7d7d5;
+    --task-checkmark: #2b3749;
+    --task-checkbox-feature-alt: #c5d0ef;
+    --task-checkmark-ds: #f4721a;
+    --task-checkmark-od: #d32f19;
+
+    /* Datepicker colors */
+    --task-datepicker-elems: #FFFFFF;
+    --task-datepicker-elem-feature: #445;
+    --task-datepicker-elem-feature-alt: #454;
+    --task-datepicker-background: #222228;
+    --task-datepicker-selected: #666678;
+    --task-datepicker-feature: #434d5f;
+    --task-datepicker-action: #656e7a;
+
+    /* Special accent */
+    --special: #0E1C42;
+    --quickadd: #c04f40;
+    --quickadd-feature: #bf3b2a;
+    --quickadd-text: #eaeaea;
+    --quickadd-success: #b1dcbf;
+    --quickadd-success-text: #03561f;
+    --quickadd-placeholder: #e2c0bc;
+
+    /* Other Things */
+    --auth-background: url(./../static/auth-background.jpg);
+}
+
+
